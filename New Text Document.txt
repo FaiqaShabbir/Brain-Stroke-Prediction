@@ -1,0 +1,1 @@
+Implemented and evaluated KNN and XGBoost models for binary classification, resolving import errors and utilizing performance metrics and visualization tools.
