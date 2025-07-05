@@ -1,31 +1,54 @@
-In this project, we will predict whether a patient will have a heart stroke or not based on his/her comorbidities, work, and lifestyle. Projects like these are widely applied in the healthcare sector, doing this project will impart you a better understanding of analysis of data, data cleaning, data visualizations, and algorithms.
+# Brain-Stroke-Prediction
 
-Data set — The stroke data is available on Kaggle.
+A machine learning project to predict the likelihood of a brain stroke based on patient data. This project leverages data science and predictive modeling to assist healthcare professionals in identifying high-risk individuals and improving patient outcomes.
 
-This dataset lists multiple features like gender, age, glucose level, BMI, smoking status, other comorbidities, etc., and the target variable: stroke. Each row specifies a patient’s relevant information. Following are the features listed in the dataset:
+## Features
+- Predicts the probability of a brain stroke using patient health data
+- Utilizes a trained machine learning model (`model.pickle`)
+- Jupyter notebooks for data analysis and model development
+- Easy-to-use interface for experimentation and further development
 
-1) id: unique identifier
+## Project Structure
+```
+Brain-Stroke-Prediction/
+├── Atom_BrainStrokePrediction (1).ipynb   # Data analysis & modeling notebook
+├── stroke_prediction.ipynb                # Additional notebook for stroke prediction
+├── model.pickle                           # Trained ML model
+├── New Text Document.txt                  # Miscellaneous notes
+├── README.md                              # Project documentation
+```
 
-2) gender: “Male”, “Female” or “Other”
+## Installation
+1. Clone this repository:
+   ```bash
+   git clone <repository-url>
+   cd Brain-Stroke-Prediction
+   ```
+2. (Optional) Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+3. Install required packages (example):
+   ```bash
+   pip install -r requirements.txt
+   ```
+   *(If `requirements.txt` is missing, install common packages: pandas, numpy, scikit-learn, jupyter)*
 
-3) age: age of the patient
+## Usage
+- Open the Jupyter notebooks in your preferred environment:
+  ```bash
+  jupyter notebook
+  ```
+- Explore and run the cells in `Atom_BrainStrokePrediction (1).ipynb` or `stroke_prediction.ipynb` to analyze data and make predictions.
+- The trained model is saved as `model.pickle` and can be loaded for inference.
 
-4) hypertension: 0 if the patient doesn’t have hypertension, 1 if the patient has hypertension
+## Model Information
+- The model was trained on health-related features to predict stroke risk.
+- For details on data preprocessing, feature selection, and model evaluation, refer to the provided notebooks.
 
-5) heart_disease: 0 if the patient doesn’t have any heart diseases, 1 if the the patient has a heart disease
+## Contributing
+Contributions are welcome! Please open issues or submit pull requests for improvements, bug fixes, or new features.
 
-6) ever_married: “No” or “Yes”
-
-7) work_type: “children”, “Govt_jov”, “Never_worked”, “Private” or “Self-employed”
-
-8) Residence_type: “Rural” or “Urban”
-
-9) avg_glucose_level: average glucose level in blood
-
-10) BMI: body mass index
-
-11) smoking_status: “formerly smoked”, “never smoked”, “smokes” or “Unknown”*
-
-12) stroke: 1 if the patient had a stroke or 0 if not
-
-This dataset lists all the relevant information required to predict stroke chances and these identifiers are often used by medical practitioners as well. These input parameters can be used to predict the chances of stroke in a patient.
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details. 
